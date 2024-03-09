@@ -1,21 +1,22 @@
-import { useState } from 'react'
 import './App.css'
+import React, {useState, useEffect} from "react";
 
 function App() {
 
-  const [count, setCount] = useState(0)
+    const [color, setColor] = useState("green");
 
-function handleCount(){
-  setCount(count + 1);
-}
 
-  return (
-    <>
-      <h1>Count: {count}</h1>
-      <button onClick={handleCount}>Set count</button>
-    </>
+    function changeColor(){
+        setColor(c => c === "green" ? "red" : "green");
+    }
 
-  )
+    return (<>
+        <p style={{color: color}}>Count: {color}</p>
+        <button onClick={changeColor}>Change Color</button>
+        <button></button>
+        <button></button>
+
+    </>);
 }
 
 export default App

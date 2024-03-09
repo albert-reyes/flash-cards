@@ -66,3 +66,26 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.card{
+  background-color: #E0CCBE;
+  border: 1px solid hsl(0, 0%, 0%);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.2);
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  max-width: 200px;
+  max-height: 350px;
+  display: inline-block;
+}
+
+.card .card-qText{
+  font-family: 'Gill Sans', Courier, monospace;
+  color: #3C3633;
+}
+
+.card .card-aText{
+  font-family: 'Gill Sans', Courier, monospace;
+  color: #3C3633;
+}
